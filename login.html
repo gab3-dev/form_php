@@ -6,9 +6,15 @@
 	<title>Login</title>
 </head>
 <body>
-	<form>
-		<input type="text" name="login">
-		<input type="pasword" name="password">
+	<form name="login" action="api_login.php" method="post">
+		<label for="login">Login</label>
+		<input type="text" id="login" name="user"><br>
+		
+		<label for="password">Senha</label>
+		<input type="password" name="password">
+
+		<input type="submit" name="login"><br>
+		<a href="index.html">Cadastro</a>
 	</form>
 </body>
 </html>
